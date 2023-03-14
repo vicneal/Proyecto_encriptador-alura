@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2efb80128a.js" crossorigin="anonymous"></script>
+    <title>Proyecto Encriptador</title>
+</head>
+<body onload="mostrarMensaje()">
+   <div class="contenedor">
+     <!-- titulo de la pagina -->
+     <div class="left">
+         <div class="contenedor-titulo">
+            <img src="img/Logo.png" alt="logo-alura">
+         </div>
+    
+         <!-- Campo para el texto que va a ser encriptado/desencriptado -->
+         <div class="contenedor-texto">
+            <!-- <input type="text" name="" id="" class="texto" placeholder="Ingrese el texto aqui"> -->
+            <textarea name="resultado" id="" cols="45" rows="15" class="texto" placeholder="Ingrese el texto aqui" ></textarea>
+            
+         </div>
+    
+         <div class="contenedorImportante">
+            <p ><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos</p>
+         </div>
+        
+         <div class="contenedor-botones">
+            <!-- Un botón para encriptar -->
+            <button type="submit" class="botonEncriptar" onclick="encriptartexto()">Encriptar</button>
+        
+            <!-- Un botón para desencriptar -->
+            <button type="submit" class="botonDesencriptar" onclick="desencriptartexto()">Desencriptar</button>
+         </div>
+     </div>
+     
+     
+
+     <div class="right">
+        <!-- Área para mostrar el texto encriptado/desencriptado. -->
+        <div class="conResultado">
+            <textarea name="resultado" id="idresultado" cols="20" rows="15" class="resultado" readonly></textarea>
+            <button type="submit" class="botonCopiar" onclick="copiar('idresultado')">Copiar</button>
+        </div>
+        <div class="sinResultado">
+            <img src="img/Muñeco.png" alt="Muñeco">
+            <h3>Ningún mensaje fue encontrado</h3>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+     </div>
+
+     <section class="modal">  
+        <div class="modal__container">
+            <img src="img/icon-exclamation-symbol-in-circle-png.webp" alt="error" class="modal__img">
+            <p class="modal__parra1">Solo debe de ingresar letras minúsculas.</p>
+            <p class="modal__parra2">Las palabras no deben de contener acentos </p>
+            <button class="modal__close" onclick="cerrarMensaje()">X</button>
+        </div>
+     </section>
+   </div>
+
+<!-- <footer class="piePagina">
+    pie de pagina
+</footer> -->
+
+    <script src="config.js">
+
+    </script>
+</body>
+</html>

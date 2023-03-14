@@ -1,0 +1,214 @@
+body{
+    background:#F3F5FC;
+}
+.contenedor{
+    width: 1020px;
+    margin: auto;
+    margin-top: 40px;
+}
+.left {
+    float: left;
+    width: 72%;
+    height: 500px;
+    background-color: #F3F5FC;
+}
+
+.contenedor-titulo{
+    margin-top: 20px;
+}
+.contenedor-texto{
+    margin-left: 150px;
+    margin-top: 35px;
+}
+    .texto{
+        color:#0A3871;
+        font-family: 'inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+        background:#F3F5FC;
+        height: 280px;
+        resize: none;
+    }
+    .texto::placeholder{
+        color:#0A3871;
+        font-family: 'inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        
+    }
+
+.contenedorImportante{
+    color:#0A3871;
+    font-family: 'inter';
+    font-size: 13px;
+    margin-left: 140px;
+    margin-top: 40px;
+}
+    .contenedorImportante i {
+        margin-right: 5px;
+    }
+
+.contenedor-botones{
+    margin-left: 140px;
+}
+
+.botonEncriptar {
+    background: #0A3871;
+    color: #F3F5FC;
+    font-family: 'inter';
+    padding: 5px 60px;
+    font-weight: 400;
+    font-size: 15px;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    width: 240px;
+    height: 40px;
+}
+   
+   .botonEncriptar:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 2px 2px 10px #072f5f;
+   }
+
+.botonDesencriptar {
+    background: #bbbcbe9c;
+    color: #0A3871;
+    font-family: 'inter';
+    padding: 5px 60px;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    width: 240px;
+    height: 40px;
+    margin-left: 20px;
+}
+   
+   .botonDesencriptar:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 2px 2px 10px #072f5f;
+   }
+
+
+
+.right {
+    float: right;
+    width: 27%;
+    height:490px;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow:  10px 10px 15px #44658f;
+    text-align: center;
+}
+    .resultado{
+        resize: none;
+        margin-top: 40px;
+        color:#0A3871;
+        font-family: 'inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+        background:#FFFFFF;
+        height: 280px;
+    }
+    .botonCopiar {
+        background: #bbbcbe9c;
+        color: #0A3871;
+        font-family: 'inter';
+        font-weight: 600;
+        font-size: 12px;
+        border: 1px solid #0A3871;
+        border-radius: 15px;
+        width: 150px;
+        height: 30px;
+        margin-top: 40px;
+    }
+       
+       .botonCopiar:hover {
+        transform: translate(-0.05em, -0.05em);
+        box-shadow: 2px 2px 10px #072f5f;
+       }
+    .sinResultado{
+        width: 90%;
+        margin: auto;
+        margin-top: 70px;
+    }
+    .sinResultado img{
+        width: 90%;
+    }
+    .sinResultado h3, p{
+        color: #0A3871;
+        font-family: 'inter';
+    }
+    .sinResultado p{
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+}
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}
+    .modal__container{
+        margin: auto;
+        width: 90%;
+        max-width: 350px;
+        max-height: 90%;
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 2em 2.3em;
+        display: grid;
+        gap: 1em;
+        place-items: center;
+        grid-auto-columns: 100%;
+    }
+        .modal__img{
+            width: 90%;
+            max-width: 70px;
+        }
+        .modal__parra1 , .modal__parra2{
+            font-weight: bold;
+        }
+        .modal__close{
+            color: #FFFFFF;
+            background-color: #d97c62;
+            font-size: 22px;
+            font-family: 'inter';
+            font-weight: bold;
+            padding: .2em 2em;
+            border:1px solid #d97c62;
+            border-radius: 15px;
+            display: inline-block;
+            transition: background-color .3s;
+        }
+            .modal__close:hover{
+                color: #d97c62;
+                background-color: #FFFFFF;
+                border:1px solid #d97c62;
+            }
+
+
+.piePagina{
+    clear: both;
+}
+
