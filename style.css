@@ -268,15 +268,21 @@ body{
     
     .right {
         width: 90%;
-        height:450px;
+        height:500px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         margin: 20px auto;
         text-align: center;
     }
+    .conResultado{
+        display: flex;
+        flex-direction: column;
+    }
     .resultado{
-            height: 280px;
-        }
+        width: 90%;
+        height: 280px;
+    }
     .botonCopiar {
             font-size: 15px;
             width: 130px;
