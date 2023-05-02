@@ -209,6 +209,13 @@ body{
 
 .piePagina{
     clear: both;
+    color:#0A3871;
+    font-family: 'inter';
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -311,6 +318,13 @@ body{
     .modal__close:hover{
         color: #d86545;
         border:1px solid #d86545;
+    }
+    .piePagina{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
                
 }
